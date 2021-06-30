@@ -1,0 +1,225 @@
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+        background-image: url("../images/body_background.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.top__header{
+    width: 100vw;
+    height: 5vw;
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+    justify-content: space-between;
+}
+.top__header__logo{
+    width: 5vw;
+    height: 100%;
+    display: flex;
+
+}
+.top__header__logo img{
+    width: 100%;
+    height: 100%;
+}
+.top__header__h1{
+    color: white;
+    line-height: 3;
+    font-size: 1.8vw;
+    letter-spacing: .3vw;
+}
+.top__header__button{
+    width: 5vw;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.opened_menu{
+height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 3vw;
+    
+}
+.opened_menu a {
+    padding: 2vw 2vw 2vw 3vw;
+    text-decoration: none;
+    font-size: 1.7vw;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+    font-size: 3vw;
+    margin-left: 5vw;
+  }
+
+.game__container{
+    width: 65%;
+    height: 15vw;
+    margin: auto;
+    margin-top: 12vw;
+    display: flex;
+    justify-content: space-around;
+}
+.game__section{
+    width: 45%;
+    height: 100%;
+
+}
+.game__section:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.1, 1.1);
+    box-shadow: 1.5vw 1.5vw 2.5vw #999;
+    border: 1px solid floralwhite;
+}
+.game__section h1{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    background-color: #fff;
+    font-family: Papyrus, fantasy;
+    font-size: 1.7vw;
+}
+.game__section__photo{
+    width: 100%;
+    height: 70%;
+}
+.game__section__photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.game__section__buttons{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+}
+.game__section__buttons a{
+    margin-top: .2vw;
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: Papyrus, fantasy;
+}
+.game__section__buttons a:hover{
+    background-color:black;
+    color: white;
+    
+}
+ .drums__game__information{
+    z-index: 10;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:0; 
+    height:0; 
+    margin:auto;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.backgroundDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+ .drums__information__close{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 3vw;
+    font-size: 2vw;
+    margin-left: 3vw;
+    color: black;
+}
+
+.drums__game{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    transition: 0.5s;
+    background-image: url("../images/drums_background.jpg");
+    background-size:contain;
+}
+.drums__game__close{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 3vw;
+    font-size: 2vw;
+    margin-left: 3vw;
+}
+.drums__game__keys{
+    display: none;
+    width: 100%;
+    height: 90%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3vw;
+    padding: 1.5vw;
+
+}
+.key{
+    width: 10%;
+    height: 7vw;
+    border: .1vw solid white;
+    color: white;
+    transition:all 0.07s;
+}
+.key h1{
+    text-align: center;
+    font-size: 3vw;
+}
+.key span{
+    margin:auto; 
+    display:table;
+    text-align: center;
+    font-size: 1.2vw;
+    color: #ffc600;
+}
+.keyPlaying{
+    border-color: #ffc600;
+    box-shadow: 0 0 1vw #ffc600;
+    transform: scale(1.05);
+}

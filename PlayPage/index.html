@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PlayPage</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <div class="container">
+        <header class="top__header">
+            <div class="top__header__logo">
+                <img src="images/hed_logo.png">
+                <h1 class="top__header__h1">
+                    PlayPage
+                </h1>
+            </div>
+           
+            <div class="top__header__button">
+
+            </div>
+        </header>
+        <div class="game__container">
+            <div class="game__section">
+                <h1>Drums Game</h1>
+                <div class="game__section__photo">
+                    <img src="images/drums.jpg">
+                </div>
+                <div class="game__section__buttons">
+                    <a href="#" id="drumsPlay">Zagraj</a>
+                    <a href="#" id="info2">Informacje</a>
+                </div>
+            </div>
+
+        </div><!--game container end-->
+    </div>
+
+<!--Side bar right menu-->
+<div class="opened_menu">
+    <a  class="closebtn">X</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+<!--Container for informations about piano game-->
+<!--Container for informations about drums game-->
+<div class="drums__game__information">
+    <a  class="drums__information__close">Zamknij</a>
+</div>
+
+
+<div class="drums__game">
+    <a class="drums__game__close">Zamknij</a>
+    <div class="drums__game__keys">
+        <div class="key" data-key="49">
+            <h1>1</h1>
+            <span class="sound">clap</span>
+        </div>
+        <div class="key" data-key="50">
+            <h1>2</h1>
+            <span class="sound">HiHat</span>
+        </div>
+        <div class="key" data-key="51">
+            <h1>3</h1>
+            <span class="sound">Kick</span>
+        </div>
+        <div class="key" data-key="52">
+            <h1>4</h1>
+            <span class="sound">Openhat</span>
+        </div>
+        <div class="key" data-key="53">
+            <h1>5</h1>
+            <span class="sound">Boom</span>
+        </div>
+        <div class="key" data-key="54">
+            <h1>6</h1>
+            <span class="sound">Ride</span>
+        </div>
+        <div class="key" data-key="55">
+            <h1>7</h1>
+            <span class="sound">Snare</span>
+        </div>
+        <div class="key" data-key="56">
+            <h1>8</h1>
+            <span class="sound">Tom</span>
+        </div>
+        <div class="key" data-key="57">
+            <h1>9</h1>
+            <span class="sound">Tink</span>
+        </div>
+
+    </div>
+    <audio data-key="49" src="sounds/clap.wav"></audio>
+    <audio data-key="50" src="sounds/hihat.wav"></audio>
+    <audio data-key="51" src="sounds/kick.wav"></audio>
+    <audio data-key="52" src="sounds/openhat.wav"></audio>
+    <audio data-key="53" src="sounds/boom.wav"></audio>
+    <audio data-key="54" src="sounds/ride.wav"></audio>
+    <audio data-key="55" src="sounds/snare.wav"></audio>
+    <audio data-key="56" src="sounds/tom.wav"></audio>
+    <audio data-key="57" src="sounds/tink.wav"></audio>
+</div>
+
+
+
+
+
+<!-- Script for drums Information window, that opens when you click information button -->
+<script src="script/menu.js"></script>
+<script src="script/drumsInfoPopUp.js"></script>
+<script src="script/drumsGame.js"></script>
+
+</body>
+</html>
